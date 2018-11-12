@@ -1,23 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct coeur
-{
-  int batt;
-};
+#define TAILLE_MAX 1000
 
-void afficher_donnees(int n, struct coeur *a)
+int afficher_donnees(int argc, char *argv[])
 {
-  FILE* fichier = NULL;
-    char chaine[TAILLE_MAX] = ""; // Chaîne vide de taille TAILLE_MAX
- 
+    FILE* fichier = NULL;
+    char chaine[TAILLE_MAX] = "";
+
     fichier = fopen("Battements.csv", "r");
- 
+
     if (fichier != NULL)
     {
-        fgets(chaine, TAILLE_MAX, fichier); // On lit maximum TAILLE_MAX caractères du fichier, on stocke le tout dans "chaine"
-        printf("%s", chaine); // On affiche la chaîne
- 
+        while (fgets(chaine, TAILLE_MAX, fichier) != NULL) // On lit le fichier tant qu'on ne reçoit pas d'erreur (NULL)
+        {
+            printf("%s", chaine); // On affiche la chaîne qu'on vient de lire
+        }
         fclose(fichier);
     }
+    return 0;
 }
