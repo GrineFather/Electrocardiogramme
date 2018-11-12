@@ -7,17 +7,10 @@
 
 #define PERSONS_TO_SAVE_FILE "evacuation_plan0.txt"
 
-enum zipcode {
-GUADELOUPE = 971,
-STBARTH = 977,
-STMARTIN = 978,
-};
+
 
 struct inhabitant {
-int distance;
-char prenom[MAX_STR_SIZE];
-char nom[MAX_STR_SIZE];
-enum zipcode zip;
+int ;
 };
 
 void show(int n, struct inhabitant *a) {
@@ -119,7 +112,7 @@ return a->zip < b->zip ? -1 : a->zip > b->zip;
 #define PERSONS_TO_SAVE_FILE_IN "evacuation_plan0.txt"
 #define PERSONS_TO_SAVE_FILE_OUT "better_evacuation_plan0.txt"
 
-void search(int n, struct inhabitant *a){
+/*void search(int n, struct inhabitant *a){
 char prenomsearch[MAX_STR_SIZE];
 char nomsearch[MAX_STR_SIZE];
 printf("Prenom et nom à chercher : n");
@@ -131,20 +124,12 @@ printf("%d, %s, %s, %dn", a[i].distance, a[i].prenom,a[i].nom, a[i].zip);
 }
 printf("Fin de la recherche");
 }
-
+*/
 int main(int argc, char **argv) {
 FILE *s;
 int n;
-/*For testing purpose :
-struct inhabitant inhabs[] = {
-{ 100, "Jean", "France", GUADELOUPE },
-{ 10, "Ameni", "Braminia", STBARTH },
-{ 12, "Mathieu", "Krister", GUADELOUPE },
-{ 23, "Hilaire", "Blanchi", STMARTIN }
-};
-n = sizeof(inhabs) / sizeof(*inhabs);*/
 
-struct inhabitant *inhabs0;
+
 
 
 if((s = fopen(PERSONS_TO_SAVE_FILE_IN, "r")) == NULL) {
