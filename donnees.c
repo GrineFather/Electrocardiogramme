@@ -7,5 +7,5 @@ struct stokage
 
 void afficher_donnees()
 {
-  
+  FILE *s
 }
