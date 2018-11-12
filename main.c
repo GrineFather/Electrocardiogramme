@@ -6,5 +6,5 @@ int main()
 printf("Veuillez rentrez un choix \n");
 scanf("%i" , &c);
 
-    return 0;
+    return 0; 
 }
