@@ -1,13 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct stokage
+struct coeur
 {
-  int tab[];
-  int *strock;
-  
+  int batt;
+};
 
-void lire_donnees()
+void afficher_donnees(int n, struct coeur *a)
 {
-  
+  FILE* fichier = NULL;
+    char chaine[TAILLE_MAX] = ""; // Chaîne vide de taille TAILLE_MAX
+ 
+    fichier = fopen("Battements.csv", "r");
+ 
+    if (fichier != NULL)
+    {
+        fgets(chaine, TAILLE_MAX, fichier); // On lit maximum TAILLE_MAX caractères du fichier, on stocke le tout dans "chaine"
+        printf("%s", chaine); // On affiche la chaîne
+ 
+        fclose(fichier);
+    }
 }
