@@ -3,11 +3,6 @@
 #include <string.h>
 #include <math.h>
 
-#define MAX_STR_SIZE 20
-
-#define PERSONS_TO_SAVE_FILE "evacuation_plan0.txt"
-
-
 
 struct inhabitant {
 int ;
