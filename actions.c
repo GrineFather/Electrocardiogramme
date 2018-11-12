@@ -24,6 +24,7 @@ void quick_sort(int tab[],int deb,int fin)
  tri_tab_recursif(tab,pos+1,fin);
 }
 
+
 void search(int n, struct inhabitant *a){
     char prenomsearch[MAX_STR_SIZE];
     char nomsearch[MAX_STR_SIZE];
