@@ -11,7 +11,7 @@ printf("5:Afficher les données en ordre selon le pouls\n");
 printf("6: Rechercher et afficher les données pour un temps particulier\n");
 printf("7:Afficher la moyenne de pouls dans une plage de temps donnée\n");
 printf("8:Afficher le nombre de lignes de données actuellement en mémoire\n");
-printf("9: Rechercher et afficher les max/min de pouls avec le temps associé de pi\n");
+printf("9: Rechercher et afficher les max/min de pouls\n");
 printf("10: Quitter l’application\n");
                 if (c==1){
                     }
