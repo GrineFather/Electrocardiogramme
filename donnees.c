@@ -3,9 +3,11 @@
 
 struct stokage
 {
+  int tab[];
+  int *strock;
   
 
-void afficher_donnees()
+void lire_donnees()
 {
-  FILE *s
+  
 }
